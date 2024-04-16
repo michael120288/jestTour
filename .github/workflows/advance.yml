@@ -36,7 +36,7 @@ jobs:
       if: always()  # Ensure this step runs even if previous steps failed
       with:
         name: jest-results
-        path: coverage/  # Adjust this path according to where your test results or coverage reports are stored
+        path: src/results
 
   comment:
     needs: test
